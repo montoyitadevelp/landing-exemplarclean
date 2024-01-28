@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Banner from '../Banner.astro';
+import Footer from '../Footer.astro';
+import Header from '../Header.astro';
+import Offers from '../Offers.astro';
+import Payment from '../Payment.astro';
+import Services from '../Services.astro';
+import Testimonals from '../Testimonals.astro';
+import WorkUs from '../WorkUs.astro';
+---
+
+<Layout
+  title="Exemplar Clean | Cleaning Services"
+  description="Exemplar Clean is literally the most amazing pretend window cleaner that has ever been."
+>
+  <Header />
+  <main class="w-screen">
+    <Banner />
+    <Offers />
+    <Services /> 
+    <Payment />
+    <Testimonals />
+    <!-- <WorkUs /> -->
+    <Footer />
+  </main>
+</Layout>

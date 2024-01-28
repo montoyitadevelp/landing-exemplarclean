@@ -1,0 +1,71 @@
+---
+import { Image } from 'astro:assets';
+import Panel from '../../public/PanelCleaning.jpg';
+import Conservatory from '../../public/WinterGarden.jpg';
+import Gutter from '../../public/Gutter.jpg';
+import ResidentialWindow from '../../public/WindowCleaning.jpg';
+---
+
+<section class="h-full w-full p-20">
+  <span
+    class="flex flex-col md:flex-row justify-center md:justify-between px-2"
+  >
+    <h1 class="text-4xl font-bold">Services</h1>
+    <div class="flex flex-col gap-5">
+      <h3 class="text-lg font-bold text-[#118AC5]">Our services</h3>
+      <p class="text-sm font-light md:w-96 w-56">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+        molestias autem.
+      </p>
+    </div>
+  </span>
+  <article class="pt-10 flex justify-center w-full">
+    <div class="flex flex-col lg:flex-row items-center  gap-5 ">
+      <section class="relative w-full h-full shadow-2xl rounded-2xl">
+        <Image
+          class="-z-10 w-full h-[350px] rounded-2xl"
+          src={Panel}
+          alt="Panel cleaning offer from Exemplar Clean"
+        />
+        <div class="absolute bottom-0 p-2 z-20 bg-white rounded-xl h-16 w-32">
+          <h3 class="text-[#FE7443] text-lg font-semibold">Solar Panel</h3>
+          <h6 class="text-xs font-light text-[#9395A0]">Cleaning</h6>
+        </div>
+      </section>
+      <section class="relative w-full h-full shadow-2xl rounded-2xl">
+        <Image
+          class="-z-10 w-full h-[350px] rounded-2xl"
+          src={Conservatory}
+          alt="Conservatory cleaning offer from Exemplar Clean"
+        />
+        <div class="absolute bottom-0 p-2 z-20 bg-white rounded-xl h-16 w-32">
+          <h3 class="text-[#FE7443] text-lg font-semibold">Conservatory</h3>
+          <h6 class="text-xs font-light text-[#9395A0]">Cleaning</h6>
+        </div>
+      </section>
+      <section class="relative w-full h-full shadow-2xl rounded-2xl">
+        <Image
+          class="-z-10 w-full h-[350px] rounded-2xl"
+          src={Gutter}
+          alt="Gutter cleaning offer from Exemplar Clean"
+        />
+        <div class="absolute bottom-0 p-2 z-20 bg-white rounded-xl h-16 w-32">
+          <h3 class="text-[#FE7443] text-lg font-semibold">Gutter</h3>
+          <h6 class="text-xs font-light text-[#9395A0]">Cleaning</h6>
+        </div>
+      </section>
+      <section class="relative w-full h-full shadow-2xl rounded-2xl">
+        <Image
+          class="-z-10 w-full h-[350px] rounded-2xl"
+          src={ResidentialWindow}
+          alt="Residential window cleaning offer from Exemplar Clean"
+        />
+        <div class="absolute bottom-0 p-2 z-20 bg-white rounded-xl h-16 w-32">
+          <h3 class="text-[#FE7443] text-lg font-semibold">Residential</h3>
+          <h6 class="text-xs font-light text-[#9395A0]">Window Cleaning</h6>
+        </div>
+      </section>
+      <section class="fade"></section>
+    </div>
+  </article>
+</section>

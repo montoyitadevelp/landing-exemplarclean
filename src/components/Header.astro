@@ -1,0 +1,80 @@
+---
+import { Image } from 'astro:assets';
+import GirlCleaning from '../../public/GirlClean.png';
+import Verified from '../components/icons/Verified.astro';
+import Best from '../components/icons/Best.astro';
+import Qualified from '../components/icons/Qualified.astro';
+import Established from '../components/icons/Established.astro';
+import Watch from '../components/icons/Watch.astro';
+---
+
+<main class="md:aspect-video lg:max-h-[35rem] w-full h-screen bg-[#F4F6FB]">
+  <div
+    class="absolute hidden sm:block lg:bottom-auto bottom-0 right-0 animate-fade-up"
+  >
+    <Image
+      class="animate-duration-[2s] md:h-auto h-full md:w-auto w-full animate-ease-in-out bg-no-repeat bg-cover"
+      src={GirlCleaning}
+      height={450}
+      width={500}
+      style="clip-path: circle(79.3% at 74% 26%);"
+      alt="A example of girl cleaning"
+    />
+    <div class="bg-white rounded-2xl p-5 absolute top-32 left-4 shadow-2xl">
+      <Verified />
+    </div>
+    <div
+      class="bg-white flex flex-row gap-2 rounded-2xl p-3 absolute top-56 right-2 shadow-2xl"
+    >
+      <Qualified />
+      <div class="flex flex-col">
+        <h1 class="text-lg font-bold">Qualified</h1>
+        <p class="text-sm">Work Team</p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="absolute h-min mt-[25rem] lg:mt-auto hidden bg-white sm:flex flex-row gap-2 rounded-2xl p-5 top-96 right-[23rem] shadow-2xl animate-bounce"
+  >
+    <Best />
+    <div class="flex flex-col">
+      <h1 class="text-2xl font-bold">Best</h1>
+      <p>Cleaning Service</p>
+    </div>
+  </div>
+</main>
+
+<span class="absolute inset-0 lg:w-[40rem] w-full h-64 md:h-full my-16 p-10">
+  <div class="flex flex-col pb-5">
+    <div class="flex flex-row gap-2">
+      <Established />
+      <h3 class="text-sm text-[#118AC5] tracking-wider uppercase">
+        Established Since 2000
+      </h3>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-16 md:gap-0">
+    <h3 class="md:text-5xl text-4xl font-semibold tracking-wide">
+      <strong
+        class="uppercase md:text-6xl text-5xl ExamplarClean text-[#118AC5]"
+        >Exemplar Clean
+      </strong>is literally the most amazing pretend window cleaner that has
+      ever been.
+    </h3>
+    <p class="font-light text-sm">
+      We use a mix of traditional window cleaning and water fed pole. This gives
+      your hypothetical windows such a perfect clean, you won't even be able to
+      see them!
+    </p>
+  </div>
+  <div class="flex flex-row justify-between pt-5">
+    <button class="bg-[#FFBA18] rounded-full px-10 h-12 text-xs font-bold">
+      Order Now
+    </button>
+    <div class="flex flex-row items-center gap-5">
+      <Watch />
+      <p class="text-xs font-light">Watch Demo</p>
+    </div>
+  </div>
+</span>

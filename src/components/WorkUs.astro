@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import bgWorkUs from '../../public/BgContact.png';
+import Watch from './icons/Watch.astro';
+---
+
+<section class="relative w-full h-[550px] bg-[#F6F4EE] py-10">
+  <span class="flex flex-col justify-center gap-10 h-[60vh] w-[80vh] text-pretty z-20 p-5 md:p-10 ">
+      <h1 class="text-5xl font-bold md:w-auto w-[50vh] z-10">Are You Ready To Work With Us Now?</h1>
+      <p class="text-sm font-light text-[#45565F] md:w-auto w-[40vh] z-10">
+        What do you think after seeing the good response from our previous
+        customers
+      </p>
+      <div class="flex flex-col justify-center gap-7 z-10 md:items-start w-[40vh] md:w-auto items-center md:flex-row lg:justify-between ">
+        <button class="bg-[#FFBA18] rounded-full px-10 h-12 text-xs font-bold">
+          Order Now
+        </button>
+        <div class="flex flex-row items-center gap-5">
+          <Watch />
+          <p class="text-xs font-light">Watch Demo</p>
+        </div>
+      </div>
+  </span>
+  <Image
+    class="absolute top-0 right-0 w-[800px] h-[550px] bg-no-repeat bg-cover "
+    src={bgWorkUs}
+    alt="Background blue with lines"
+  />
+</section>

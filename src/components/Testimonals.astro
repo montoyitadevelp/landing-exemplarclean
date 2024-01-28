@@ -1,0 +1,98 @@
+---
+import { Image } from 'astro:assets';
+import Testimonal1 from '../../public/Testimonal1.png';
+import Testimonal2 from '../../public/Testimonal2.png';
+import Testimonal3 from '../../public/Testimonal3.png';
+import Star from './icons/Star.astro';
+---
+
+<section class="p-20">
+  <article
+    class="flex flex-col items-center md:w-full md:flex-row justify-center md:justify-between text-pretty"
+  >
+    <h1 class="text-4xl font-bold w-auto md:w-[70vh]">
+      They Satisfied With Our Service
+    </h1>
+    <div class="flex flex-col gap-5 w-auto md:w-[70vh]">
+      <h3 class="text-[#FE7443] text-xl font-bold">Testimonals</h3>
+      <p class="text-sm font-light">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+        molestias autem.
+      </p>
+    </div>
+  </article>
+  <article class="flex flex-col justify-center md:justify-normal items-center lg:flex-row gap-10 pt-10 ">
+    <span class="bg-[#F4F6FB] w-[320px] sm:w-[380px] h-[300px] sm:h-[313px] rounded-2xl shadow-2xl">
+      <div class="flex flex-row items-center p-5 gap-2">
+        <Image
+          width={100}
+          src={Testimonal1}
+          alt="Celine Dions profile picture"
+        />
+        <div class="flex flex-col gap-2">
+          <h1 class="text-2xl font-bold">Celine Dions</h1>
+          <h5 class="font-light text-lg text-[#5A717C]">Cafe Owner</h5>
+        </div>
+      </div>
+      <div class="flex flex-row gap-5 px-5">
+        <Star />
+        <Star />
+        <Star />
+        <Star />
+        <Star />
+      </div>
+      <p class="text-lg font-light italic text-[#5A717C] p-5">
+        Increase product sales and increase the amount of cash that comes in for
+        further development.
+      </p>
+    </span>
+    <span class="w-[320px] sm:w-[380px] h-[300px] sm:h-[313px] rounded-2xl ">
+      <div class="flex flex-row items-center p-5 gap-2">
+        <Image
+          width={100}
+          src={Testimonal2}
+          alt="Riana Madiva profile picture"
+        />
+        <div class="flex flex-col gap-2">
+          <h1 class="text-2xl font-bold">Riana Madiva</h1>
+          <h5 class="font-light text-lg text-[#5A717C]">CEO Founder</h5>
+        </div>
+      </div>
+      <div class="flex flex-row gap-5 px-5">
+        <Star />
+        <Star />
+        <Star />
+        <Star />
+        <Star />
+      </div>
+      <p class="text-lg font-light italic text-[#5A717C] p-5">
+        Increase product sales and increase the amount of cash that comes in for
+        further development.
+      </p>
+    </span>
+    <span class="bg-[#F4F6FB]  w-[320px] sm:w-[380px] h-[300px] sm:h-[313px] rounded-2xl shadow-2xl">
+      <div class="flex flex-row items-center p-5 gap-2">
+        <Image
+          width={100}
+          src={Testimonal3}
+          alt="Celine Dions profile picture"
+        />
+        <div class="flex flex-col gap-2">
+          <h1 class="text-2xl font-bold">John Melon</h1>
+          <h5 class="font-light text-lg text-[#5A717C]">Freelancer</h5>
+        </div>
+      </div>
+      <div class="flex flex-row gap-5 px-5">
+        <Star />
+        <Star />
+        <Star />
+        <Star />
+        <Star />
+      </div>
+      <p class="text-lg font-light italic text-[#5A717C] p-5">
+        Increase product sales and increase the amount of cash that comes in for
+        further development.
+      </p>
+    </span>
+  </article>
+</section>

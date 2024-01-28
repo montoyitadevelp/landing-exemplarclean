@@ -1,0 +1,68 @@
+---
+import '@fontsource-variable/onest';
+import '@fontsource/bangers';
+import Navbar from '../components/Navbar.astro';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/ExemplarClean.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+     <Navbar />
+    <slot />
+  </body>
+</html>
+<style is:global>
+  html {
+    font-family: 'Onest Variable', system-ui, sans-serif;
+  }
+
+  .text__glowing {
+    transition: text-shadow 0.3s ease;
+  }
+
+  .text__glowing:hover {
+    text-shadow:
+      0 0 10px #80c0ee,
+      0 0 20px #80c0ee,
+      0 0 40px #80c0ee,
+      0 0 80px #80c0ee,
+      0 0 120px #80c0ee;
+  }
+
+  #header-nav {
+    animation: blur linear both;
+    animation-timeline: scroll();
+    animation-range: 0 500px;
+  }
+
+  .ExamplarClean {
+    font-family: 'Bangers', sans-serif;
+  }
+
+  @keyframes blur {
+    to {
+      box-shadow:
+        0px 5px 50px -5px rgba(71, 69, 69, 0.1),
+        0px 0px 0 1px rgba(71, 69, 69, 0.1);
+      background: rgba(71, 69, 69, 0.1);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+
+</style>

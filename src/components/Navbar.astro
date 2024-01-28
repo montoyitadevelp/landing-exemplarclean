@@ -1,0 +1,46 @@
+---
+import Logo from './icons/Logo.astro';
+import CloseIcon from './icons/CloseIcon.astro';
+import MenuIcon from './icons/Menu.astro';
+import Schedule from './icons/Schedule.astro';
+---
+
+<nav id="header-nav" class="fixed top-0 w-full  px-6 py-4 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between gap-16">
+    <span class="relative z-10">
+      <Logo
+        class="absolute m-auto blur-sm opacity-0 transition-opacity duration-300 hover:opacity-100"
+      />
+    </span>
+    <div
+        id="header-menu"
+        class="fixed w-full text-white md:text-black h-dvh inset-0 bg-[#151a36]/90 text-md flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:text-sm md:flex-row md:translate-y-[initial]"
+      >
+        <a class="text__glowing" href="/home">
+          <p>Home</p>
+        </a>
+        <a class="text__glowing" href="/about">
+          <p>About</p>
+        </a>
+        <a class="text__glowing" href="/services">
+          <p>Services</p>
+        </a>
+        <a class="text__glowing" href="/contact">
+          <p>Contact</p>
+        </a>
+
+        <button
+          class="flex flex-row items-center gap-2 text-white bg-[#118AC5] rounded-full px-7 h-12 md:py-2 md:ml-auto"
+        >
+          <Schedule />
+          Book schedule
+        </button>
+
+        <a href="#header-nav" class="md:hidden absolute top-6 right-6">
+          <CloseIcon />
+        </a>
+      </div>
+
+    <a href="#header-menu" class="md:hidden"><MenuIcon /></a>
+  </div>
+</nav>

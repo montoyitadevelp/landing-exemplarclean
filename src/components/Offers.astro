@@ -1,0 +1,61 @@
+---
+import Domestic from './icons/Domestic.astro';
+import Gardening from './icons/Gardening.astro';
+import Handyman from './icons/Handyman.astro';
+import WindowCleaning from './icons/WindowCleaning.astro';
+---
+
+<section class="w-full h-full px-20 py-20 bg-[#F4F6FB]">
+  <article class="flex flex-col items-center md:w-full md:flex-row justify-center md:justify-between text-pretty">
+    <h1 class="text-4xl font-bold w-auto md:w-[70vh]">Always Provide The Best Service</h1>
+    <div class="flex flex-col gap-5 w-auto md:w-[70vh]">
+      <h3 class="text-[#FE7443] text-xl font-bold">We offer</h3>
+      <p class="text-sm font-light">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+        molestias autem.
+      </p>
+    </div>
+  </article>
+  <section class="flex flex-col justify-center items-center lg:flex-row gap-5 pt-10">
+    <div
+      class="flex flex-col gap-2 items-center justify-evenly text-center bg-white shadow-2xl rounded-xl w-72 h-80 p-5"
+    >
+      <WindowCleaning />
+      <h1 class="text-xl font-bold text-pretty">Window Cleaning</h1>
+      <p class="text-md font-light text-pretty">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+        molestias autem.
+      </p>
+    </div>
+    <div
+      class="flex flex-col gap-2 items-center justify-evenly text-center w-72 h-80 p-5"
+    >
+      <Handyman />
+      <h1 class="text-xl font-bold text-pretty">Handyman Services</h1>
+      <p class="text-md font-light text-pretty">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+        molestias autem.
+      </p>
+    </div>
+    <div
+      class="flex flex-col gap-2 items-center justify-evenly text-center w-72 h-80 p-5"
+    >
+      <Gardening />
+      <h1 class="text-xl font-bold text-pretty">Garden Cleaning</h1>
+      <p class="text-md font-light text-pretty">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+        molestias autem.
+      </p>
+    </div>
+    <div
+    class="flex flex-col gap-2 items-center justify-evenly text-center w-72 h-80 p-5"
+  >
+    <Domestic />
+    <h1 class="text-xl font-bold text-pretty">Domestic Cleaning</h1>
+    <p class="text-md font-light text-pretty">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+      molestias autem.
+    </p>
+  </div>
+  </section>
+</section>

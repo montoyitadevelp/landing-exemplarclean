@@ -1,0 +1,85 @@
+---
+import { Image } from 'astro:assets';
+import Banners from '../../public/Banner.webp';
+import Banner1 from '../../public/Banner1.webp';
+import Banner2 from '../../public/Banner2.webp';
+import Verified from '../components/icons/BannerVerified.astro';
+---
+
+<section class="flex flex-row h-[100vh] mb-20 justify-center p-20">
+  <article
+    class="lg:flex hidden relative flex-col w-full animate-fade-up opacity-100 group scale-150 contrast-[110%] transition-all"
+  >
+    <div class="absolute -z-10">
+      <Image
+        src={Banners}
+        class="object-cover h-[601px] w-[478px] rounded-2xl"
+        alt="Banner from men cleaning window"
+      />
+    </div>
+    <div
+      class="blur-md opacity-100 absolute inset-0 transition contrast-125 object-cover -z-20"
+    >
+      <Image
+        src={Banners}
+        class="object-cover h-[610px] w-[490px] rounded-2xl"
+        alt="Banner from men cleaning window"
+      />
+    </div>
+    <div
+      class="absolute -left-16 z-20 mt-10 mr-10 shadow-2xl bg-white p-3 rounded-2xl"
+    >
+      <Image
+        src={Banner1}
+        class="object-cover w-[215px] h-[279px] rounded-2xl"
+        alt="Banner from men offer his services like handyman"
+      />
+    </div>
+    <div class="absolute z-20 ml-96 mt-80 shadow-2xl bg-white p-3 rounded-2xl">
+      <Image
+        src={Banner2}
+        class="object-cover w-[169px] h-[218px] rounded-2xl"
+        alt="Banner from girl cleaning kitchen"
+      />
+    </div>
+  </article>
+  <article class="flex flex-col justify-evenly h-full gap-5">
+    <h1 class="text-3xl font-bold">
+      We Are Very Experiencied In Cleaning Services
+    </h1>
+    <p class="text-md font-light">
+      Our team are very qualified and compromitted with the customers
+    </p>
+
+    <div class="flex flex-row gap-2">
+      <Verified />
+      <div class="flex flex-col gap-2">
+        <h3 class="text-xl font-medium">We Are Comitted</h3>
+        <p class="text-sm font-light">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+          molestias autem.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-row gap-2">
+      <Verified />
+      <div class="flex flex-col gap-2">
+        <h3 class="text-xl font-medium">Trusted Professionals</h3>
+        <p class="text-sm font-light">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+          molestias autem.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-row gap-2">
+      <Verified />
+      <div class="flex flex-col gap-2">
+        <h3 class="text-xl font-medium">Highly Rated Cleaning</h3>
+        <p class="text-sm font-light">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia,
+          molestias autem.
+        </p>
+      </div>
+    </div>
+  </article>
+</section>
